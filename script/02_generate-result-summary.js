@@ -27,7 +27,7 @@ const template = `
             </div>
         </div>
     </section>
-    <div class="columns" style="overflow-x: scroll;">
+    <div class="columns is-mobile" style="overflow-x: scroll;">
         __SUMMARY__
     </div>
 </body>
