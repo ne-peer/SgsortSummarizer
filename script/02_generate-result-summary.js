@@ -62,14 +62,17 @@ const resultTemplate = `
                     <p>
                         <strong>__NAME__</strong>
                         <small>__ACCOUNT__</small>
-                        <p class="has-text-grey-lighter is-size-7">__URL__</p>
-                        <div>
-                            __RESULT__
-                        </div>
+                        
+                    </p>
+                    <a href="__URL__" target="_blank" class="has-text-primary is-size-7">
+                        __URL__
                     </p>
                 </div>
             </div>
         </article>
+        <div>
+            __RESULT__
+        </div>
     </div>
 </div>
 `;
