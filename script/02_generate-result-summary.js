@@ -27,7 +27,7 @@ const template = `
             </div>
         </div>
     </section>
-    <div class="columns">
+    <div class="columns" style="overflow-x: scroll;">
         __SUMMARY__
     </div>
 </body>
@@ -38,8 +38,8 @@ const template = `
         <p>
             This page by
             <a href="https://ne-peer.com">Necokan</a>.
-            <p>Great original tool:
-                <a href="https://odenpa.com/sgsort/">デレステ キャラソート</a>
+            <p>
+                Great original - <a href="https://odenpa.com/sgsort/">デレステ キャラソート</a>
             </p>
         </p>
     </div>
