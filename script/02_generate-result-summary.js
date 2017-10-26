@@ -21,7 +21,7 @@ const template = `
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
-                    Cgsort Result
+                    ${title}
                 </h1>
                 <h2 class="subtitle">
                     ${generateDate}
@@ -63,12 +63,11 @@ const resultTemplate = `
                 <div class="content">
                     <p>
                         <strong>__NAME__</strong>
-                        <small>__ACCOUNT__</small>
-                        
+                        <!-- <small><a href="__ACCOUNT__" target="_blank"></a>__ACCOUNT__</small> -->
                     </p>
                     <a href="__URL__" target="_blank" class="has-text-primary is-size-7">
                         __URL__
-                    </p>
+                    </a>
                 </div>
             </div>
         </article>
@@ -86,6 +85,8 @@ const resultDocList = [];
 for (const person of resultJson) {
     let doc = resultTemplate;
     doc = doc.replace(/__NAME__/g, person.name);
+    doc = doc.replace(/__ACCOUNT__/g, person.account);
+    doc = doc.replace(/__ICON__/g, person.icon);
     doc = doc.replace(/__URL__/g, person.url);
     doc = doc.replace(/__RESULT__/g, person.html);
     resultDocList.push(doc);
